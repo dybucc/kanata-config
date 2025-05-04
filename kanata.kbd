@@ -1,0 +1,78 @@
+(defsrc
+  esc    1      2      3      4      5      6      7      8      9      0      -    =    bspc
+  tab    q      w      e      r      t      y      u      i      o      p      [    ]    \
+  caps   a      s      d      f      g      h      j      k      l      ;      apos      ret
+  lshift z      x      c      v      b      n      m      ,      .      /                rshift
+  lctrl  lmet   lalt                spc                          left   down   up        rght
+
+  mlft mrgt mwu mwd
+)
+
+(deflayer base
+  XX     XX     XX     XX     XX     XX     XX     XX     XX     XX     XX     XX   XX   XX
+  XX     q      w      e      r      t      y      u      i      o      p      XX   XX   XX
+  @esc   a      s      d      f      g      h      j      k      l      ;      apos      XX
+  @lp    z      x      c      v      b      n      m      ,      .      /                @rp
+  XX     XX     XX                 @spcw                         XX     XX     XX        XX
+
+  XX XX XX XX
+)
+
+(deflayer extra-1
+  XX     XX     XX     XX     XX     XX     XX     XX     XX     XX     XX     XX   XX   XX
+  XX     1      2      3      4      5      6      7      8      9      0      XX   XX   XX
+  @esc   \      -      =      lmet   tab    left   down   up     rght   bspc   ret       lalt
+  @lb    lalt   @x     @c      v      b      n      m      ,      .      /                @rb
+  XX     XX     XX                   _                           XX     XX     XX        XX
+
+  XX XX XX XX
+)
+
+(deflayer mouse
+  XX     XX     XX     XX     XX     XX     XX     XX     XX     XX     XX     XX   XX   XX
+  XX     XX     XX     XX     XX     XX     XX     XX     XX     XX     XX     XX   XX   XX
+  XX     XX     XX     XX     XX     XX     @left  @down  @up    @rght  XX     XX        XX
+  XX     XX     _      mlft   mrgt   mwu    mwd    XX     XX     XX     XX               XX
+  XX     XX     XX                   _                           XX     XX     XX        XX
+
+  XX XX XX XX
+)
+
+(deflayer kitty
+  XX     XX     XX     XX     XX     XX     XX     XX     XX     XX     XX     XX   XX   XX
+  XX     XX     XX     XX     XX     XX     XX     XX     XX     XX     XX     XX   XX   XX
+  XX     XX     XX     XX     XX     XX     @kl    @kd    @ku    @kr    @kn    XX        XX
+  XX     XX     XX     _      XX     XX     XX     XX     XX     XX     XX               XX
+  XX     XX     XX                   _                           XX     XX     XX        XX
+
+  XX XX XX XX
+)
+
+(defcfg)
+
+(defvar
+  tap-time 100
+  hold-time 200
+  th $hold-time
+  tt $tap-time
+)
+
+(defalias
+  spcw  (tap-hold $tt $th spc (layer-toggle extra-1))
+  esc   (tap-hold $tt $th esc lctrl)
+  lp    (tap-hold $tt $th S-9 lshift)
+  rp    (tap-hold $tt $th RS-0 rshift)
+  lb    (tap-hold $tt $th [ lshift)
+  rb    (tap-hold $tt $th ] rshift)
+  x     (tap-hold $tt $th x (layer-toggle mouse))
+  left  (movemouse-left 50 5)
+  rght  (movemouse-right 50 5)
+  up    (movemouse-up 50 5)
+  down  (movemouse-down 50 5)
+  c     (tap-hold $tt $th c (layer-toggle kitty))
+  kl    C-S-left
+  kd    C-S-down
+  ku    C-S-up
+  kr    C-S-rght
+  kn    C-S-t
+)
