@@ -1,4 +1,5 @@
 (defsrc
+  grv
   esc    1      2      3      4      5      6      7      8      9      0      -    =    bspc
   tab    q      w      e      r      t      y      u      i      o      p      [    ]    \
   caps   a      s      d      f      g      h      j      k      l      ;      apos      ret
@@ -9,6 +10,7 @@
 )
 
 (deflayer base
+  XX
   XX     XX     XX     XX     XX     XX     XX     XX     XX     XX     XX     XX   XX   XX
   XX     q      w      e      r      t      y      u      i      o      p      XX   XX   XX
   @esc   a      s      d      f      g      h      j      k      l      ;      apos      XX
@@ -19,16 +21,18 @@
 )
 
 (deflayer extra-1
+  XX
   XX     XX     XX     XX     XX     XX     XX     XX     XX     XX     XX     XX   XX   XX
   XX     1      2      3      4      5      6      7      8      9      0      XX   XX   XX
   @esc   \      -      =      lmet   tab    left   down   up     rght   bspc   ret       lalt
-  @lb    lalt   @x     @c      v      b      n      m      ,      .      /                @rb
+  @lb    lalt   @x     @c     v      b      n      grv    XX     XX     XX               @rb
   XX     XX     XX                   _                           XX     XX     XX        XX
 
   XX XX XX XX
 )
 
 (deflayer mouse
+  XX
   XX     XX     XX     XX     XX     XX     XX     XX     XX     XX     XX     XX   XX   XX
   XX     XX     XX     XX     XX     XX     XX     XX     XX     XX     XX     XX   XX   XX
   XX     XX     XX     XX     XX     XX     @left  @down  @up    @rght  XX     XX        XX
@@ -39,6 +43,7 @@
 )
 
 (deflayer kitty
+  XX
   XX     XX     XX     XX     XX     XX     XX     XX     XX     XX     XX     XX   XX   XX
   XX     XX     XX     XX     XX     XX     XX     XX     XX     XX     XX     XX   XX   XX
   XX     XX     XX     XX     XX     XX     @kl    @kd    @ku    @kr    @kn    XX        XX
