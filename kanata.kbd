@@ -25,7 +25,7 @@
   XX     XX     XX     XX     XX     XX     XX     XX     XX     XX     XX     XX    XX   XX
   XX     1      2      3      4      5      6      7      8      9      0      XX    XX   XX
   XX     \      -      =      lmet   tab    left   down   up     rght   lalt   lctrl      XX
-  @lb    lalt   @x     @c     v      b      n      grv    XX     XX     XX                @rb
+  XX     lalt   @x     @c     XX     XX     XX     grv    XX     XX     XX                XX
   XX     XX     XX                   _                           XX     XX     XX         XX
 
   XX XX XX XX
@@ -58,17 +58,17 @@
 (defvar
   tap-time 100
   hold-time 200
+  dance-time 250
   th $hold-time
   tt $tap-time
+  td $dance-time
 )
 
 (defalias
   spcw  (tap-hold $tt $th spc (layer-toggle extra-1))
   esc   (tap-hold $tt $th esc lctrl)
-  lp    (tap-hold-press $tt $th 9 lshift)
-  rp    (tap-hold-press $tt $th 0 rshift)
-  lb    (tap-dance 500 ([ S-[))
-  rb    (tap-dance 500 (] S-]))
+  lp    (tap-hold-press $tt $th (tap-dance $td (S-9 [ S-[)) lshift)
+  rp    (tap-hold-press $tt $th (tap-dance $td (S-0 ] S-])) rshift)
   x     (tap-hold $tt $th x (layer-toggle mouse))
   left  (movemouse-left 50 5)
   rght  (movemouse-right 50 5)
