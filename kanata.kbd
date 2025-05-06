@@ -1,54 +1,54 @@
 (defsrc
   grv
-  esc    1      2      3      4      5      6      7      8      9      0      -    =    bspc
-  tab    q      w      e      r      t      y      u      i      o      p      [    ]    \
-  caps   a      s      d      f      g      h      j      k      l      ;      apos      ret
-  lshift z      x      c      v      b      n      m      ,      .      /                rshift
-  lctrl  lmet   lalt                spc                          left   down   up        rght
+  esc    1      2      3      4      5      6      7      8      9      0      -     =    bspc
+  tab    q      w      e      r      t      y      u      i      o      p      [     ]    \
+  caps   a      s      d      f      g      h      j      k      l      ;      apos       ret
+  lshift z      x      c      v      b      n      m      ,      .      /                 rshift
+  lctrl  lmet   lalt                spc                          left   down   up         rght
 
   mlft mrgt mwu mwd
 )
 
 (deflayer base
   XX
-  XX     XX     XX     XX     XX     XX     XX     XX     XX     XX     XX     XX   XX   XX
-  XX     q      w      e      r      t      y      u      i      o      p      XX   XX   XX
-  @esc   a      s      d      f      g      h      j      k      l      ;      apos      XX
-  @lp    z      x      c      v      b      n      m      ,      .      /                @rp
-  XX     XX     XX                 @spcw                         XX     XX     XX        XX
+  XX     XX     XX     XX     XX     XX     XX     XX     XX     XX     XX     XX    XX   XX
+  XX     q      w      e      r      t      y      u      i      o      p      bspc  XX   XX
+  @esc   a      s      d      f      g      h      j      k      l      ;      apos       ret
+  @lp    z      x      c      v      b      n      m      ,      .      /                 @rp
+  XX     XX     XX                 @spcw                         XX     XX     XX         XX
 
   XX XX XX XX
 )
 
 (deflayer extra-1
   XX
-  XX     XX     XX     XX     XX     XX     XX     XX     XX     XX     XX     XX   XX   XX
-  XX     1      2      3      4      5      6      7      8      9      0      XX   XX   XX
-  @esc   \      -      =      lmet   tab    left   down   up     rght   bspc   ret       lalt
-  @lb    lalt   @x     @c     v      b      n      grv    XX     XX     XX               @rb
-  XX     XX     XX                   _                           XX     XX     XX        XX
+  XX     XX     XX     XX     XX     XX     XX     XX     XX     XX     XX     XX    XX   XX
+  XX     1      2      3      4      5      6      7      8      9      0      XX    XX   XX
+  XX     \      -      =      lmet   tab    left   down   up     rght   lalt   lctrl      XX
+  @lb    lalt   @x     @c     v      b      n      grv    XX     XX     XX                @rb
+  XX     XX     XX                   _                           XX     XX     XX         XX
 
   XX XX XX XX
 )
 
 (deflayer mouse
   XX
-  XX     XX     XX     XX     XX     XX     XX     XX     XX     XX     XX     XX   XX   XX
-  XX     XX     XX     XX     XX     XX     XX     XX     XX     XX     XX     XX   XX   XX
-  XX     XX     XX     XX     XX     XX     @left  @down  @up    @rght  XX     XX        XX
-  XX     XX     _      mlft   mrgt   mwu    mwd    XX     XX     XX     XX               XX
-  XX     XX     XX                   _                           XX     XX     XX        XX
+  XX     XX     XX     XX     XX     XX     XX     XX     XX     XX     XX     XX    XX   XX
+  XX     XX     XX     XX     XX     XX     XX     XX     XX     XX     XX     XX    XX   XX
+  XX     XX     XX     XX     XX     XX     @left  @down  @up    @rght  XX     XX         XX
+  XX     XX     _      mlft   mrgt   mwu    mwd    XX     XX     XX     XX                XX
+  XX     XX     XX                   _                           XX     XX     XX         XX
 
   XX XX XX XX
 )
 
 (deflayer kitty
   XX
-  XX     XX     XX     XX     XX     XX     XX     XX     XX     XX     XX     XX   XX   XX
-  XX     XX     XX     XX     XX     XX     XX     XX     XX     XX     XX     XX   XX   XX
-  XX     XX     XX     XX     XX     XX     @kl    @kd    @ku    @kr    @kn    XX        XX
-  XX     XX     XX     _      XX     XX     XX     XX     XX     XX     XX               XX
-  XX     XX     XX                   _                           XX     XX     XX        XX
+  XX     XX     XX     XX     XX     XX     XX     XX     XX     XX     XX     XX    XX   XX
+  XX     XX     XX     XX     XX     XX     XX     XX     XX     XX     XX     XX    XX   XX
+  XX     XX     XX     XX     XX     XX     @kl    @kd    @ku    @kr    @kn    XX         XX
+  XX     XX     XX     _      XX     XX     XX     XX     XX     XX     XX                XX
+  XX     XX     XX                   _                           XX     XX     XX         XX
 
   XX XX XX XX
 )
