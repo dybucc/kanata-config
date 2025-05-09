@@ -23,7 +23,7 @@
 (deflayer extra-1
   XX
   XX     XX     XX     XX     XX     XX     XX     XX     XX     XX     XX     XX    XX   XX
-  XX     1      2      3      4      5      6      7      8      9      0      XX    XX   XX
+  XX     @1     @2     @3     @4     @5     @6     @7     @8     @9     @0     XX    XX   XX
   XX     \      -      =      lmet   tab    left   down   up     rght   lalt   lctrl      XX
   @lp    lalt   @x     @c     XX     XX     XX     grv    @\     @-     @=                @rp
   XX     XX     XX                   _                           XX     XX     XX         XX
@@ -59,9 +59,11 @@
   tap-time 100
   hold-time 200
   dance-time 250
+  num-dance-time 150
   th $hold-time
   tt $tap-time
   td $dance-time
+  ntd $num-dance-time
 )
 
 (defalias
@@ -83,4 +85,14 @@
   \     S-\
   -     S--
   =     S-=
+  1     (tap-dance $ntd (1 S-1))
+  2     (tap-dance $ntd (2 S-2))
+  3     (tap-dance $ntd (3 S-3))
+  4     (tap-dance $ntd (4 S-4))
+  5     (tap-dance $ntd (5 S-5))
+  6     (tap-dance $ntd (6 S-6))
+  7     (tap-dance $ntd (7 S-7))
+  8     (tap-dance $ntd (8 S-8))
+  9     (tap-dance $ntd (9 S-9))
+  0     (tap-dance $ntd (0 S-0))
 )
