@@ -25,7 +25,7 @@
   XX     XX     XX     XX     XX     XX     XX     XX     XX     XX     XX     XX    XX   XX
   XX     1      2      3      4      5      6      7      8      9      0      XX    XX   XX
   XX     \      -      =      lmet   tab    left   down   up     rght   lalt   lctrl      XX
-  @lp    lalt   @x     @c     XX     XX     XX     grv    XX     XX     XX                @rp
+  @lp    lalt   @x     @c     XX     XX     XX     grv    @\     @-     @=                @rp
   XX     XX     XX                   _                           XX     XX     XX         XX
 
   XX XX XX XX
@@ -80,4 +80,7 @@
   ku    C-S-up
   kr    C-S-rght
   kn    C-S-t
+  \     S-\
+  -     S--
+  =     S-=
 )
