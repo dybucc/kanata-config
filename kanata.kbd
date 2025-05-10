@@ -46,7 +46,7 @@
   XX
   XX     XX     XX     XX     XX     XX     XX     XX     XX     XX     XX     XX    XX   XX
   XX     XX     XX     XX     XX     XX     XX     XX     XX     XX     XX     XX    XX   XX
-  XX     XX     XX     XX     XX     XX     @kl    @kd    @ku    @kr    @kn    XX         XX
+  XX     XX     XX     XX     XX     XX     @kl    @kd    @ku    @kr    @kn    @kb        XX
   XX     XX     XX     _      XX     XX     XX     XX     XX     XX     XX                XX
   XX     XX     XX                   _                           XX     XX     XX         XX
 
@@ -82,6 +82,7 @@
   ku    C-S-up
   kr    C-S-rght
   kn    C-S-t
+  kb    C-S-g
   \     S-\
   -     S--
   =     S-=
