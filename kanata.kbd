@@ -53,7 +53,10 @@
   XX XX XX XX
 )
 
-(defcfg)
+(defcfg
+  movemouse-inherit-accel-state yes
+  movemouse-smooth-diagonals yes
+)
 
 (defvar
   tap-time 100
@@ -72,10 +75,10 @@
   lp    (tap-hold-press $tt $th (tap-dance $td (S-9 [ S-[)) lshift)
   rp    (tap-hold-press $tt $th (tap-dance $td (S-0 ] S-])) rshift)
   x     (tap-hold $tt $th x (layer-toggle mouse))
-  left  (movemouse-left 50 5)
-  rght  (movemouse-right 50 5)
-  up    (movemouse-up 50 5)
-  down  (movemouse-down 50 5)
+  left  (movemouse-accel-left  50 3 5 20)
+  rght  (movemouse-accel-right 50 3 5 20)
+  up    (movemouse-accel-up    50 3 5 20)
+  down  (movemouse-accel-down  50 3 5 20)
   c     (tap-hold $tt $th c (layer-toggle kitty))
   kl    C-S-left
   kd    C-S-down
