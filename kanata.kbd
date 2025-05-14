@@ -13,7 +13,7 @@
   XX
   XX     XX     XX     XX     XX     XX     XX     XX     XX     XX     XX     XX    XX   XX
   XX     q      w      e      r      t      y      u      i      o      p      bspc  XX   XX
-  @esc   a      s      d      f      g      h      j      k      l      ;      apos       ret
+  @esc   a      s      d      f      g      h      j      k      l      @lalt  @lctrl     ret
   @lp    z      x      c      v      b      n      m      ,      .      /                 @rp
   XX     XX     XX                 @spcw                         XX     XX     XX         XX
 
@@ -70,6 +70,8 @@
 )
 
 (defalias
+  lalt  (tap-hold $tt $th ; lalt)
+  lctrl (tap-hold $tt $th ' lctrl)
   spcw  (tap-hold $tt $th spc (layer-toggle extra-1))
   esc   (tap-hold $tt $th esc lctrl)
   lp    (tap-hold-press $tt $th (tap-dance $td (S-9 [ S-[)) lshift)
